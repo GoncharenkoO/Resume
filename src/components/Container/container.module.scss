@@ -1,0 +1,21 @@
+@import '../../sass/main.scss';
+
+.container {
+  display: grid;
+  align-items: center;
+  min-width: 310px;
+  background-color: #fff;
+  box-shadow: var(--boxShadow);
+
+  @include mq(tablet) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: stretch;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  @include mq(desktop) {
+    max-width: 1200px;
+  }
+}

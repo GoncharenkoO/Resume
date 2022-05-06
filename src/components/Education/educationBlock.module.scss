@@ -1,0 +1,20 @@
+@import '../../sass/main.scss';
+
+.educationTitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 5px;
+
+  @include mq(tablet) {
+    margin-bottom: 7px;
+  }
+}
+
+.educationList {
+  @include mq(tablet) {
+    margin-left: 20px;
+  }
+}

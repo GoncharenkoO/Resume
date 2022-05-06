@@ -1,0 +1,22 @@
+@import './sass/main.scss';
+
+:root {
+  --primaryTextColor: #595959;
+  --secondaryTextColor: #a8a8a8;
+  --accentColor: #aa73d6;
+  --boxShadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  --timingFn: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f5f7fa;
+
+  @include mq(tablet) {
+    padding: 30px;
+  }
+
+  @include mq(desktop) {
+    padding: 40px;
+  }
+}

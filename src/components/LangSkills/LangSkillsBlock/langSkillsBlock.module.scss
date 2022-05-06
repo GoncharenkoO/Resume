@@ -1,0 +1,28 @@
+@import '../../../sass/main.scss';
+
+.langSkillsBlock {
+  display: grid;
+  grid-template-columns: 20px 1fr 1fr;
+  column-gap: 10px;
+  align-items: center;
+  text-align: justify;
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.chekIcon {
+  fill: rgb(129, 191, 129);
+}
+
+.langSkills,
+.langSkillsText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  font-family: Montserrat, sans-serif;
+  color: #adb1b7;
+}

@@ -1,0 +1,16 @@
+@import '../../sass/main.scss';
+
+.techSkillsSection {
+  margin-bottom: 20px;
+}
+
+.techSkillsTitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.71;
+  margin-bottom: 10px;
+
+  @include mq(tablet) {
+    font-size: 22px;
+  }
+}
