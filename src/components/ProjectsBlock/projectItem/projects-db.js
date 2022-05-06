@@ -9,7 +9,7 @@ export const teamProjects = [
     url: 'https://qa-team-project.netlify.app/auth',
     screenshot: qaTest,
     description: 'section contacts of our team (role: developer)',
-    stack: 'React.js, Redux, HTML5, SCSS, JavaScript, Figma, Trello',
+    stack: 'React.js, Redux, AXIOS, HTML5, SCSS, JavaScript, Figma, Trello',
   },
   {
     id: 2,
