@@ -45,6 +45,6 @@ export const ownProjects = [
     url: 'https://goncharenkoo.github.io/goit-markup-hw-08/',
     screenshot: webstudio,
     description: 'app for a web studio',
-    stack: 'HTML5, CSS3, JavaScripvt, BEM',
+    stack: 'HTML5, SCSS, JavaScripvt, BEM',
   },
 ];
