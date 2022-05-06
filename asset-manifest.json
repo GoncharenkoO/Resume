@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Resume/static/css/main.cfa7a565.css",
+    "main.js": "/Resume/static/js/main.0d67ce22.js",
+    "static/media/images.png": "/Resume/static/media/images.0b433597d260f8e9d375.png",
+    "static/media/photo.jpg": "/Resume/static/media/photo.83ba87232d99bc212633.jpg",
+    "static/media/webstudio.png": "/Resume/static/media/webstudio.464a1d1bbe364cc50352.png",
+    "static/media/filmoteka.png": "/Resume/static/media/filmoteka.3c0f20e21a2df4d43921.png",
+    "static/media/CV.pdf": "/Resume/static/media/CV.e98fd95010e6851b3eff.pdf",
+    "static/media/donutMasterclass.png": "/Resume/static/media/donutMasterclass.e3400160c4ca8023dba1.png",
+    "static/media/helsocial.png": "/Resume/static/media/helsocial.109aa0b6d04a3dcc0ea5.png",
+    "static/media/movies.png": "/Resume/static/media/movies.10589ff04a75ce08aab6.png",
+    "static/media/proTest.png": "/Resume/static/media/proTest.078270ffded11730fe68.png",
+    "static/media/phonebook.png": "/Resume/static/media/phonebook.f5b48ff517c391f25881.png",
+    "index.html": "/Resume/index.html",
+    "main.cfa7a565.css.map": "/Resume/static/css/main.cfa7a565.css.map",
+    "main.0d67ce22.js.map": "/Resume/static/js/main.0d67ce22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfa7a565.css",
+    "static/js/main.0d67ce22.js"
+  ]
+}
