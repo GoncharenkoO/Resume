@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import LangSkillsBlock from './LangSkillsBlock';
-import { langSkillsItems } from './langskillsitem/langskills';
+import { langSkillsItems } from './LangSkillsBlock/langskills';
 import styles from './langSkills.module.scss';
 
 export default function LangSkills() {

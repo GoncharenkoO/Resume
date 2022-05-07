@@ -13,40 +13,20 @@
   }
 }
 
-.icon:hover .item,
-.icon:focus .item {
-  &:hover,
-  &:focus {
-    fill: #aa73d6;
-  }
-}
-
-.item {
-  margin-right: 10px;
-
-  @include mq(desktop) {
-    margin-right: 15px;
-  }
-}
-
 .contactsLink {
   color: #adb1b7;
   text-align: justify;
   vertical-align: middle;
   font-size: 14px;
-  line-height: 1.83;
-  letter-spacing: 0.04em;
-
-  @include mq(tablet) {
-    font-size: 13px;
-  }
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 
   @include mq(desktop) {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
-.contactsItem:hover .contactsLink,
-.contactsItem:focus .contactsLink {
+.contactsLink:hover,
+.contactsLink:focus {
   color: #aa73d6;
 }

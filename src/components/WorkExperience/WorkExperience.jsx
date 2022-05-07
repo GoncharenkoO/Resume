@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Experience from './Experience';
-import { experience } from './experienceItem/experiencework';
+import { experience } from './Experience/experiencework';
 import styles from './workExperience.module.scss';
 
 export default function WorkExperience() {

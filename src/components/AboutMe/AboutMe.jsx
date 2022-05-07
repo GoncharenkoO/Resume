@@ -12,7 +12,7 @@ export default function AboutMe() {
         <p className={styles.desc}>
           I'm a Front-end developer and I'm looking for an interesting job as a
           junior developer for experience and training. I want be in a good team
-          to improve your skills and use them for interesting tasks. Ready to
+          to improve my skills and use them for interesting tasks. Ready to
           learn and grow!
         </p>
       </div>

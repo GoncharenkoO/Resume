@@ -1,31 +1,26 @@
 @import '../../../sass/main.scss';
 
 .techSkillsBlock {
-  display: grid;
-  grid-template-columns: 20px 2fr 1fr;
-  column-gap: 10px;
-  align-items: center;
+  margin-left: 15px;
+  font-size: 14px;
+  line-height: 1.71;
   margin-bottom: 5px;
+  color: #aa73d6;
 
   &:last-child {
     margin-bottom: 0px;
   }
 }
 
-.chekIcon {
-  fill: rgb(129, 191, 129);
-}
-
 .techSkills {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.02em;
   font-family: Montserrat, sans-serif;
   color: #adb1b7;
-}
 
-.skillsIcon {
-  width: 20px;
-  height: 20px;
+  @include mq(desktop) {
+    font-size: 16px;
+  }
 }

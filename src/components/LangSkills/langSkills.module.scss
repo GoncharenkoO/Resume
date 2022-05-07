@@ -1,7 +1,16 @@
 @import '../../sass/main.scss';
 
 .langSkillsSection {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding: 0 30px;
+
+  @include mq(tablet) {
+    padding: 0px 40px;
+  }
+
+  @include mq(desktop) {
+    padding: 0px 50px;
+  }
 }
 
 .langSkillsTitle {
@@ -13,4 +22,8 @@
   @include mq(tablet) {
     font-size: 22px;
   }
+}
+
+.langSkillsList {
+  color: #aa73d6;
 }

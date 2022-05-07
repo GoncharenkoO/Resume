@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import EducationWork from './EducationWork';
-import { educationItem } from './educationItem/education-item';
+import { educationItem } from './EducationWork/education-item';
 import styles from './educationBlock.module.scss';
 
 export default function Education() {

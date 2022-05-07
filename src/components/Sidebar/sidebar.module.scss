@@ -2,7 +2,6 @@
 .sidebar {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  padding: 20px;
   background-color: #1e2939;
   color: #fff;
 
@@ -17,32 +16,20 @@
 
 .photoBox {
   margin: 0 auto 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .photo {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
-  border-radius: 50%;
+  margin-bottom: 10px;
   object-fit: cover;
 
   @include mq(tablet) {
-    width: 200px;
-    height: 200px;
-    margin-right: 0;
-  }
-
-  @include mq(desktop) {
-    width: 250px;
-    height: 250px;
+    margin-bottom: 0;
   }
 }
 
 .nameMobileBox {
   display: block;
+  padding: 0px 30px;
 
   @include mq(tablet) {
     display: none;
@@ -71,8 +58,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 200px;
+  max-width: 200px;
   height: 50px;
+
+  margin: 0px auto 20px;
 
   font-weight: 700;
   font-size: 12px;
@@ -86,6 +75,16 @@
   background-color: #aa73d6;
   border: 2px solid #aa73d6;
   border-radius: 25px;
+
+  @include mq(tablet) {
+    margin: 0px auto;
+    max-width: 200px;
+  }
+
+  @include mq(desktop) {
+    margin: 0px auto;
+    max-width: 230px;
+  }
 }
 
 .link:hover,

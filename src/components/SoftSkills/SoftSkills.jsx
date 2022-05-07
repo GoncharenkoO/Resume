@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import SoftSkillsBlock from './SoftSkillsBlock';
-import { softSkillsItems } from './softskillsitem/softskills';
+import { softSkillsItems } from './SoftSkillsBlock/softskills';
 import styles from './softSkills.module.scss';
 
 export default function SoftSkills() {

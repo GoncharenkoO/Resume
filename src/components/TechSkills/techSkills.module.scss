@@ -2,6 +2,15 @@
 
 .techSkillsSection {
   margin-bottom: 20px;
+  padding: 0 30px;
+
+  @include mq(tablet) {
+    padding: 0px 40px;
+  }
+
+  @include mq(desktop) {
+    padding: 0px 50px;
+  }
 }
 
 .techSkillsTitle {
@@ -13,4 +22,8 @@
   @include mq(tablet) {
     font-size: 22px;
   }
+}
+
+.techSkillsList {
+  color: #aa73d6;
 }

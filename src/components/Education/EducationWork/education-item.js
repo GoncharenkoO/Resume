@@ -3,6 +3,7 @@ export const educationItem = [
     id: 1,
     university: 'GoIT',
     period: 'October 2021 - June 2022',
+    position: 'Full Stack Developer',
     country: 'Ukraine',
   },
   {

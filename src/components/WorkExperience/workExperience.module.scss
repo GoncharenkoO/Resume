@@ -19,6 +19,7 @@
 
 .workList {
   margin-bottom: 10px;
+  list-style: none;
 
   @include mq(tablet) {
     margin-left: 20px;
