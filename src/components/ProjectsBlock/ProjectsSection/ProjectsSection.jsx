@@ -1,62 +1,40 @@
-import Desc from '../SvgComponent/Desc';
-import Tools from '../SvgComponent/Tools';
-import styles from './projectsSection.module.scss';
+import propTypes from 'prop-types';
+import { Item, Wrapper, Info, Tech, Link } from './ProjectsSection.style';
 
-export default function ProjectsSection({
-  url,
-  screenshot,
-  title,
-  description,
-  stack,
-}) {
+function Projects({ label, link, info, tech, repo }) {
   return (
-    (
-      <li className={styles.item}>
-        <a href={url} className={styles.link}>
-          <img
-            className={styles.screenshot}
-            src={screenshot}
-            alt={screenshot}
-            width="100px"
-            height="50px"
-          />
-          <div className={styles.sections}>
-            <h4 className={styles.nameTitle}>{title}</h4>
-            <div className={styles.content}>
-              <Desc className={styles.itemImg} color="#b8bcb8" />
-              <span className={styles.desc}>{description}</span>
-            </div>
-            <div className={styles.content}>
-              <Tools className={styles.itemImg} color="#b8bcb8" />
-              <span className={styles.desc}>{stack}</span>
-            </div>
-          </div>
-        </a>
-      </li>
-    ),
-    (
-      <li className={styles.item}>
-        <a href={url} className={styles.link}>
-          <img
-            className={styles.screenshot}
-            src={screenshot}
-            alt={screenshot}
-            width="100px"
-            height="50px"
-          />
-          <div className={styles.sections}>
-            <h4 className={styles.nameTitle}>{title}</h4>
-            <div className={styles.content}>
-              <Desc className={styles.itemImg} color="#b8bcb8" />
-              <span className={styles.desc}>{description}</span>
-            </div>
-            <div className={styles.content}>
-              <Tools className={styles.itemImg} color="#b8bcb8" />
-              <span className={styles.desc}>{stack}</span>
-            </div>
-          </div>
-        </a>
-      </li>
-    )
+    <Item>
+      <Wrapper>
+        <Link
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Live page"
+        >
+          {label}
+        </Link>
+        <Link
+          href={repo}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub repository"
+        >
+          Github
+        </Link>
+        <Tech>[{tech}]</Tech>
+      </Wrapper>
+      <Info>{info}</Info>
+    </Item>
   );
 }
+
+Projects.propTypes = {
+  info: propTypes.string,
+  label: propTypes.string,
+  link: propTypes.string,
+  preview: propTypes.string,
+  repo: propTypes.string,
+  tech: propTypes.string,
+};
+
+export default Projects;

@@ -22,7 +22,6 @@
   list-style: none;
 
   @include mq(tablet) {
-    margin-left: 20px;
     margin-bottom: 0px;
   }
 }

@@ -1,57 +1,48 @@
 import PropTypes from 'prop-types';
-import { teamProjects } from '../ProjectsBlock/projectItem/projects-db';
-import { ownProjects } from '../ProjectsBlock/projectItem/projects-own';
+import { teamProjects } from './ProjectsSection/projects';
+import { ownProjects } from './ProjectsSection/projects';
 import ProjectsSection from 'components/ProjectsBlock/ProjectsSection';
 import styles from './projects.module.scss';
 
 export default function Projects() {
-  const elements = teamProjects.map(
-    ({ id, url, screenshot, title, icons, description, stack }) => (
-      <ProjectsSection
-        key={id}
-        url={url}
-        screenshot={screenshot}
-        title={title}
-        icons={icons}
-        description={description}
-        stack={stack}
-      />
-    )
-  );
+  const elements = teamProjects.map(({ id, label, repo, info, link, tech }) => (
+    <ProjectsSection
+      key={id}
+      label={label}
+      repo={repo}
+      info={info}
+      link={link}
+      tech={tech}
+    />
+  ));
   const elementWorks = ownProjects.map(
-    ({ id, url, screenshot, title, icons, description, stack }) => (
+    ({ id, label, repo, info, link, tech }) => (
       <ProjectsSection
         key={id}
-        url={url}
-        screenshot={screenshot}
-        title={title}
-        icons={icons}
-        description={description}
-        stack={stack}
+        label={label}
+        repo={repo}
+        info={info}
+        link={link}
+        tech={tech}
       />
     )
   );
   return (
-    <dl className={styles.projectsSection}>
-      <dt className={styles.bigTitle}>Projects</dt>
-      <dd className={styles.middleTitle}>
-        Teamwork
+    <div className={styles.projectsSection}>
+      <h3 className={styles.bigTitle}>Project experience</h3>
+      <div>
         <ul className={styles.list}>{elements}</ul>
-      </dd>
-      <dd className={styles.middleTitle}>
-        My works
+      </div>
+      <div>
         <ul className={styles.list}>{elementWorks}</ul>
-      </dd>
-    </dl>
+      </div>
+    </div>
   );
 }
 
 Projects.propTypes = {
   id: PropTypes.string,
   url: PropTypes.string,
-  screenshot: PropTypes.string,
   title: PropTypes.string,
-  icons: PropTypes.string,
-  description: PropTypes.string,
   stack: PropTypes.string,
 };
