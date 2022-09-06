@@ -1,0 +1,42 @@
+@import '../../../sass//main.scss';
+
+.educationItem {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.educationTitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 7px;
+  color: #aa73d6;
+}
+
+.educationText {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+  list-style: inside;
+  color: #595959;
+  &:hover,
+  &:focus {
+    color: #aa73d6;
+  }
+}
+
+.educationTime {
+  display: block;
+  font-size: 12px;
+  line-height: 2;
+  color: #a8a8a8;
+}
+
+.divider {
+  padding: 0 5px;
+}

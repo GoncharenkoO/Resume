@@ -1,0 +1,57 @@
+@import '../../sass/main.scss';
+
+.containerAboutMe {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 20px;
+
+  @include mq(tablet) {
+    padding: 30px;
+  }
+
+  @include mq(desktop) {
+    padding: 50px;
+  }
+}
+
+.aboutMeSection {
+  margin-bottom: 20px;
+}
+
+.smallTitle {
+  display: none;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  color: #aa73d6;
+
+  @include mq(tablet) {
+    display: block;
+  }
+}
+
+.name {
+  display: none;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  @include mq(tablet) {
+    display: block;
+    font-size: 45px;
+    line-height: 1.9;
+  }
+}
+
+.desc {
+  display: flex;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.7;
+}

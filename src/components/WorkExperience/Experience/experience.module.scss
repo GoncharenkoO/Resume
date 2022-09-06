@@ -1,0 +1,42 @@
+@import '../../../sass//main.scss';
+
+.experienceItem {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.experienceTitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 7px;
+  margin-right: 4px;
+}
+
+.experienceCompany {
+  color: #aa73d6;
+}
+
+.experienceTime {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 2;
+  color: #a8a8a8;
+}
+
+.divider {
+  padding: 0 5px;
+}
+
+.duty {
+  font-size: 14px;
+  line-height: 1.71;
+  list-style: inside;
+  color: #595959;
+}

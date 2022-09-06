@@ -1,0 +1,32 @@
+@import '../../../sass/main.scss';
+
+.contactsItem {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: justify;
+  vertical-align: baseline;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.contactsLink {
+  color: #adb1b7;
+  text-align: justify;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  @include mq(desktop) {
+    font-size: 16px;
+  }
+}
+
+.contactsLink:hover,
+.contactsLink:focus {
+  color: #aa73d6;
+}

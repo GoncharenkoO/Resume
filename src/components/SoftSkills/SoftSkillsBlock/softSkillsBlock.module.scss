@@ -1,0 +1,25 @@
+@import '../../../sass/main.scss';
+
+.softSkillsBlock {
+  font-size: 14px;
+  line-height: 1.71;
+  margin-left: 15px;
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.softSkills {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  font-family: Montserrat, sans-serif;
+  color: #adb1b7;
+
+  @include mq(desktop) {
+    font-size: 16px;
+  }
+}

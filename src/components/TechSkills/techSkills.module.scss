@@ -1,0 +1,29 @@
+@import '../../sass/main.scss';
+
+.techSkillsSection {
+  margin-bottom: 20px;
+  padding: 0 30px;
+
+  @include mq(tablet) {
+    padding: 0px 40px;
+  }
+
+  @include mq(desktop) {
+    padding: 0px 50px;
+  }
+}
+
+.techSkillsTitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.71;
+  margin-bottom: 10px;
+
+  @include mq(tablet) {
+    font-size: 22px;
+  }
+}
+
+.techSkillsList {
+  color: #aa73d6;
+}
